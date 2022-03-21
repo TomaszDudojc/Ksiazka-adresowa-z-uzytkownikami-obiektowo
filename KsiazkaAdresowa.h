@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <windows.h>//aby dzia³a³ system("pause") w pliku cpp
 
 #include "Uzytkownik.h"
 
@@ -13,6 +14,11 @@ class KsiazkaAdresowa
 
     vector <Uzytkownik> uzytkownicy;
 
+    Uzytkownik podajDaneNowegoUzytkownika();
+    int pobierzIdNowegoUzytkownika();
+    bool czyIstniejeLogin(string login);
+
 public:
    void rejestracjaUzytkownika();
+   void wypiszWszystkichUzytkownikow();
 };
