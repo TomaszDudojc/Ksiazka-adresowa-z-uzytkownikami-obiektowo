@@ -1,0 +1,10 @@
+bin/
+obj/
+<<<<<<< HEAD
+plan/
+Ksiazka adresowa z uzytkownikami OBIEKTOWO.*
+=======
+*uxf
+Ksiazka adresowa z uzytkownikami OBIEKTOWO.*
+Uzytkownicy.txt
+>>>>>>> feature_user-register
