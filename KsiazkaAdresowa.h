@@ -1,33 +1,18 @@
-#include <iostream>
-#include <vector>
-#include <windows.h>//aby dzia³a³ system("pause") w pliku cpp
-#include <fstream>
-#include <sstream>//do funkcji konwertujacych
+#ifndef KSIAZKAADRESOWA_H
+#define KSIAZKAADRESOWA_H
 
-#include "Uzytkownik.h"
+#include <iostream>
+
+#include "UzytkownikMenedzer.h"
 
 using namespace std;
 
 class KsiazkaAdresowa
 {
-    int idZalogowanegoUzytkownika;
-    int idOstatniegoAdresata;
-    int idUsunietegoAdresata;
-
-    string nazwaPlikuZUzytkownikami;
-
-    vector <Uzytkownik> uzytkownicy;
-
-    Uzytkownik podajDaneNowegoUzytkownika();
-    int pobierzIdNowegoUzytkownika();
-    bool czyIstniejeLogin(string login);
-    void dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik);
-    string zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik);
-    string konwerjsaIntNaString(int liczba);
-    bool czyPlikJestPusty(fstream &plikTekstowy);
-
+    UzytkownikMenedzer uzytkownikMenedzer;//tworzymy obiekt, aby wywolac na nim metody
 public:
-    KsiazkaAdresowa();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
 };
+
+#endif
