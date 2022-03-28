@@ -14,8 +14,3 @@ int main()
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
     return 0;
 }
-
-
-
-
-
