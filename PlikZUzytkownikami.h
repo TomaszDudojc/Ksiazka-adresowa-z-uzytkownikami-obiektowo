@@ -12,7 +12,7 @@ using namespace std;
 
 class PlikZUzytkownikami
 {
-    string nazwaPlikuZUzytkownikami;
+    const string nazwaPlikuZUzytkownikami;
     fstream plikTekstowy;
 
     //bool czyPlikJestPusty(fstream &plikTekstowy);
@@ -20,8 +20,10 @@ class PlikZUzytkownikami
     string zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik);
     Uzytkownik pobierzDaneUzytkownika(string daneJednegoUzytkownikaOddzielonePionowymiKreskami);
 public:
+   //lista inicjalizacyjna, konstruktor usuwamy z pliku .cpp
+    //musi byc cialo konstruktora {}, moze byc puste
+    PlikZUzytkownikami(string NAZWAPLIKUZUZYTKOWNIKAMI): nazwaPlikuZUzytkownikami(NAZWAPLIKUZUZYTKOWNIKAMI){};
     void dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik);
-    PlikZUzytkownikami();
     vector <Uzytkownik> wczytajUzytkownikowZPliku();
 
 };
