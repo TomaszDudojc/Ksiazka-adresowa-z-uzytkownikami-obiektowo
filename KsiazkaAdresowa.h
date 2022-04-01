@@ -20,6 +20,9 @@ public:
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void logowanieUzytkownika();
+    bool czyUzytkownikJestZalogowany();
+
+    char wybierzOpcjeZMenuGlownego();
 };
 
 #endif
