@@ -1,7 +1,8 @@
 1|ala|123|
 2|ela|456|
-3|ewa|ewa|
+3|ewa|ewa nowe|
 4|tom|999|
 5|iga|iga|
 6|edek|7777|
 7|adam|2222|
+8|ada|nowe|

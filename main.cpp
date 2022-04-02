@@ -36,16 +36,40 @@ int main()
                 cout << endl << "Nie ma takiej opcji w menu." << endl << endl;
                 system("pause");
                 break;
-            // case 5 tylko testowo, potem do usuniêcia
-               case '5':
-                ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-                break;
             }
         }
         else
         {
-            cout<<"JESCZE NIE OPRACOWANO!"<<endl;
-            break;
+            wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
+
+            switch (wybor)
+            {
+            /*case '1':
+                idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
+                break;
+            case '2':
+                wyszukajAdresatowPoImieniu(adresaci);
+                break;
+            case '3':
+                wyszukajAdresatowPoNazwisku(adresaci);
+                break;
+            case '4':
+                wyswietlWszystkichAdresatow(adresaci);
+                break;
+            case '5':
+                idUsunietegoAdresata = usunAdresata(adresaci);
+                idOstatniegoAdresata = podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(idUsunietegoAdresata, idOstatniegoAdresata);
+                break;
+            case '6':
+                edytujAdresata(adresaci);
+                break;*/
+            case '7':
+                ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
+                break;
+            case '8':
+                ksiazkaAdresowa.wylogowanieUzytkownika();
+                break;
+            }
         }
     }
 
