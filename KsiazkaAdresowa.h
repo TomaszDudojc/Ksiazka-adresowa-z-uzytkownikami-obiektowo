@@ -21,8 +21,11 @@ public:
     void wypiszWszystkichUzytkownikow();
     void logowanieUzytkownika();
     bool czyUzytkownikJestZalogowany();
+    void zmianaHaslaZalogowanegoUzytkownika();
+    void wylogowanieUzytkownika();
 
     char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika();
 };
 
 #endif
