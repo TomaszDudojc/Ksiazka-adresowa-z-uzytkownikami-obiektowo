@@ -1,6 +1,6 @@
 1|ala|123|
 2|ela|456|
-3|ewa|ewa nowe|
+3|ewa|ewa|
 4|tom|999|
 5|iga|iga|
 6|edek|7777|
