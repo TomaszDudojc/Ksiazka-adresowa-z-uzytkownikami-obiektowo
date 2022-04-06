@@ -2,7 +2,8 @@
 #define METODYPOMOCNICZE_H
 
 #include <iostream>
-#include <sstream>//do funkcji konwertujacych
+#include <sstream>
+#include <algorithm>
 
 using namespace std;
 
@@ -12,6 +13,9 @@ public:
      static string konwerjsaIntNaString(int liczba);
      static string wczytajLinie();
      static char wczytajZnak();
+     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
+     static int konwersjaStringNaInt(string liczba);
+     static string pobierzLiczbe(string tekst, int pozycjaZnaku);
 };
 
 #endif

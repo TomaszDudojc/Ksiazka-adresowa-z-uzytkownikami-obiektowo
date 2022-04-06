@@ -56,7 +56,7 @@ string Adresat::pobierzNazwisko()
 {
     return nazwisko;
 }
-string Adresat::NumerTelefonu()
+string Adresat::pobierzNumerTelefonu()
 {
     return numerTelefonu;
 }
