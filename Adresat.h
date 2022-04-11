@@ -16,6 +16,16 @@ class Adresat
     string adres;
 
 public:
+    Adresat (int id=0, int idUzytkownika=0, string imie = "", string nazwisko="", string numerTelefonu="", string email="", string adres="")
+    {
+        this -> id = id;//dziêki wksaznikowi "this" nie przeslaniamy danych, nie trzeba zmieniac nazw w konstruktorze na "idNowe" itd.
+        this -> idUzytkownika = idUzytkownika;
+        this -> imie = imie;
+        this -> nazwisko = nazwisko;
+        this -> numerTelefonu = numerTelefonu;
+        this -> email = email;
+        this -> adres = adres;
+    }
     void ustawId(int noweId);
     void ustawIdUzytkownika(int noweIdUzytkownika);
     void ustawImie(string noweImie);

@@ -30,7 +30,6 @@ public:
     };//konstruktor
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
-    void wczytajUzytkownikowZPliku();
     int logowanieUzytkownika();
     bool czyUzytkownikJestZalogowany();
     void zmianaHaslaZalogowanegoUzytkownika();

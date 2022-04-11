@@ -10,6 +10,11 @@ void AdresatMenedzer::dodajAdresata()
 
     adresaci.push_back(adresat);
     plikZAdresatami.dopiszAdresataDoPliku(adresat);
+    if (plikZAdresatami.dopiszAdresataDoPliku(adresat))
+        cout << "Nowy adresat zostal dodany" << endl;
+    else
+        cout << "Blad, nie udalo sie dodac adresata do pliku" << endl;
+    system ("pause");
 }
 
 Adresat AdresatMenedzer::podajDaneNowegoAdresata()
