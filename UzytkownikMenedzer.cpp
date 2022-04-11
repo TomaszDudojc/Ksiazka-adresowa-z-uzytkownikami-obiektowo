@@ -4,7 +4,7 @@ void UzytkownikMenedzer::rejestracjaUzytkownika()
 {
     Uzytkownik uzytkownik = podajDaneNowegoUzytkownika();
     //PlikZUzytkownikami plikZUzytkownikami;
-    //jesli z tego pliku bedzimey korzystali w kilku miejscach
+    //jesli z tego pliku bedziemy korzystali w kilku miejscach
     //to mozemy utworzyc ten obiekt w pliku naglowkowym
     uzytkownicy.push_back(uzytkownik);
     plikZUzytkownikami.dopiszUzytkownikaDoPliku(uzytkownik);

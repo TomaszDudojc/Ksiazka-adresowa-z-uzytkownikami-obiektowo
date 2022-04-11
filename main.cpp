@@ -70,3 +70,25 @@ int main()
 
     return 0;
 }
+/*
+//testy
+#include "AdresatMenedzer.h"
+int a_main()
+{
+    AdresatMenedzer adresatMenedzer ("Adresaci.txt", 1);
+    adresatMenedzer.wyswietlWszystkichAdresatow();
+    //adresatMenedzer.dodajAdresata();
+}
+#include "Adresat.h"
+#include "PlikZAdresatami.h"
+
+
+int main()
+{
+  PlikZAdresatami plikZAdresatami("adr-probny.txt");
+  Adresat adresat(8,11,"stefan","gruby","123","stefcio@gruby","katowice daloko od szosy");
+
+  plikZAdresatami.dopiszAdresataDoPliku(adresat);
+  cout<<"owe id: "<<plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata();
+}
+*/
