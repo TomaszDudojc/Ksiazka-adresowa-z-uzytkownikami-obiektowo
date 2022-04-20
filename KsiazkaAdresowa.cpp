@@ -88,7 +88,7 @@ void KsiazkaAdresowa::dodajAdresata()
 {
 if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
     {
-        adresatMenedzer -> dodajAdresata();
+        adresatMenedzer->dodajAdresata();
     }
     else {
         cout << "Najpierw musisz sie zalogowac" << endl;
@@ -106,4 +106,14 @@ void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
         cout << "Najpierw musisz sie zalogowac" << endl;
         system ("pause");
     }
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    adresatMenedzer->wyszukajAdresatowPoImieniu();
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
+{
+    adresatMenedzer->wyszukajAdresatowPoNazwisku();
 }

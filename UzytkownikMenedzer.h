@@ -36,6 +36,7 @@ public:
     void zapiszWszystkichUzytkownikowDoPliku();
     void wylogowanieUzytkownika();
 
+
     int pobierzIdZalogowanegoUzytkownika();
 };
 
