@@ -2,9 +2,9 @@
 2|2|Bart|Ba|22222222222|bart@ba|gdynia|
 3|2|Edi|De|3333333333|edi@ed|krakow|
 4|1|Domi|Do|55555555555|domi@do|zakopane|
-5|3|Ola|Oliwna|888888888888|ola@oliwna|czestowchowa|
 6|1|Daria|Dabrowska|898989|daria@dabrowska|olsztyn|
 7|3|Tomi|Tom|456456|tomi@tom|gdansk|
 8|2|Gabi|Gabrys|354647848|gabi@gabrys|londyn|
 9|2|Edi|Krol|2333|edi@krol|zakpane|
 10|3|Tom|Tom|1111111111111|tom2TOM|ZABRZE|
+11|3|Edek|Tom|111111|edek@tom|krakow|
