@@ -24,6 +24,7 @@ class PlikZAdresatami
 
     void usunPlik(string nazwaPlikuZRozszerzeniem);
     void zmienNazwePliku(string staraNazwa, string nowaNazwa);
+    void edytujWybranaLinieWPliku(int idAdresata, string liniaZDanymiAdresataOddzielonePionowymiKreskami);
 
 public:
     //lista inicjalizacyjna, konstruktor usuwamy z pliku .cpp
@@ -39,6 +40,7 @@ public:
    int pobierzZPlikuIdOstatniegoAdresata();
 
    void usunWybranegoAdresataZPliku(int idUsuwanegoAdresata);
+   void zaktualizujDaneWybranegoAdresata(Adresat adresat);
 };
 
 #endif

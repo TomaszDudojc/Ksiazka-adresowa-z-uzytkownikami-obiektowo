@@ -13,7 +13,6 @@ void KsiazkaAdresowa::rejestracjaUzytkownika()
 void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 {
     uzytkownikMenedzer.wypiszWszystkichUzytkownikow();
-
 }
 
 void KsiazkaAdresowa::logowanieUzytkownika()
@@ -121,4 +120,9 @@ void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
 void KsiazkaAdresowa::usunAdresata()
 {
     adresatMenedzer->usunAdresata();
+}
+
+void KsiazkaAdresowa::edytujAdresata()
+{
+    adresatMenedzer->edytujAdresata();
 }

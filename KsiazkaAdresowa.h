@@ -11,7 +11,6 @@ using namespace std;
 class KsiazkaAdresowa
 {
     UzytkownikMenedzer uzytkownikMenedzer;//tworzymy obiekt, aby wywolac na nim metody
-    //AdresatMenedzer adresatMenedzer;
     AdresatMenedzer *adresatMenedzer;         //tworzymy wskaznik na obiekt zamiast obiektu, poniewa¿ mo¿emy nie miec w pewnych sytuacjach wszystkich danych do tworzenia obiektu
     //danej klasy, póŸniej jak bedziemy je mieli, to przy pomocy operatora "new" stworzymy obiekt
     const string NAZWA_PLIKU_Z_ADRESATAMI;  //poniewaz nie tworzymy obiektu adresatMenedzer tylko wskaznik na niego tutaj musimy stworzyc nowa zmienna do naszego konstruktora
@@ -32,7 +31,7 @@ public:
      ~KsiazkaAdresowa()
     {
         delete adresatMenedzer;          //usuwamy obiekt
-        adresatMenedzer = NULL;          // wskaznik ustawiamy znowu na NULL
+        adresatMenedzer = NULL;          //wskaznik ustawiamy znowu na NULL
     };
 
     int pobierzIdZalogowanegoUzytkownika();
@@ -52,6 +51,7 @@ public:
     void wyszukajAdresatowPoImieniu();
     void wyszukajAdresatowPoNazwisku();
     void usunAdresata();
+    void edytujAdresata();
 };
 
 #endif
